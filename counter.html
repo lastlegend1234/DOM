@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+            height: 100vh;
+            
+        }
+    </style>
+</head>
+<body>
+   <center>
+    <h1>Counter</h1>
+   <div><input type="text" value="0" id="pr1">
+   <br>
+   <br>
+<span>
+    <button onclick="Myfunc()" id="pr2" style="background-color: lightskyblue">-</button>
+</span>
+<span>
+    <button onclick="Myfunc2()" id="pr3" style="background-color: lightskyblue">@</button>
+</span>
+<span>
+    <button onclick="Myfunc3()" id="pr4" style="background-color: lightskyblue">+</button>
+</span>
+</div>
+   </center>
+
+   <script>
+     function Myfunc(){
+       let inp = document.getElementById("pr1");
+       let cur = parseInt(inp.value);
+       inp.value=cur-1;
+     }
+     function Myfunc3(){
+       let inp = document.getElementById("pr1");
+       let cur = parseInt(inp.value);
+       inp.value=cur+1;
+     }
+     function Myfunc2(){
+       let inp = document.getElementById("pr1");
+       let cur = parseInt(inp.value);
+       inp.value=0;
+     }
+   </script>
+</body>
+</html>

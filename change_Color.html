@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <center>
+      <span>
+        <button id="redf" onclick="colorf('red')" style="background-color: red ;color: white; border-radius: 10px;">Red</button>
+    </span>
+</span>
+        <button id="yellowf" onclick="colorf('yellow') " style="background-color: yellow ;color: white;border-radius: 10px;">yellow</button>
+    </span>
+</span>  
+        <button id="blackf" onclick="colorf('black')"  style="background-color: black ;color: white;border-radius: 10px;">Black</button>
+    </span>
+</span>
+        <button id="purplef" onclick="colorf('purple')"  style="background-color: purple ;color: white;border-radius: 10px;">purple</button>
+    </span>
+</span>
+        <button id="greenf" onclick="colorf('green')"  style="background-color: green ;color: white;border-radius: 10px;">Green</button>
+    </span>
+</span>
+        <button id="Bluef"onclick="colorf('blue')"  style="background-color: blue;color: white; border-radius: 10px;">Blue</button>
+    </span>
+</span>
+        <button id="redf" style="background-color: orangered ;color: white;border-radius: 10px;">Default</button>
+    </span>
+ </center>
+
+ <script>
+    function colorf(color){
+     const allowedcolors = ["red","yellow","black","white","green","blue"];
+     if(allowedcolors.includes(color)){
+        document.body.style.backgroundColor=color;
+     }
+    }
+ </script>
+</body>
+</html>
